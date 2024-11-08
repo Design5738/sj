@@ -1,0 +1,45 @@
+ <!-- Video Source -->
+ <!DOCTYPE html>
+ <html lang="ko">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js"></script>
+    <title>웹디자인</title>
+   
+ </head>
+ <body>
+  <section class="showcase">
+    <header>
+      <h2 class="logo"></h2>
+      <div class="toggle"></div>
+    </header>
+    <video src="img/Pexels Videos.mp4" muted loop autoplay></video>
+    <div class="overlay"></div>
+    
+  </section>
+  <div class="menu">
+    <ul>
+      <li><a href="sub/Atype/index.html">A type</a></li>
+      <li><a href="sub/Btype/index.html">B type</a></li>
+      <li><a href="sub/Ctype/index.html">C type</a></li>
+      <li><a href="sub/Dtype/index.html">D type</a></li>
+      <li><a href="sub/Etype/index.html">E type</a></li>
+    </ul>
+  </div>
+  <script>
+    const menuToggle = document.querySelector('.toggle');
+    const showcase = document.querySelector('.showcase');
+
+    menuToggle.addEventListener('click', () => {
+    menuToggle.classList.toggle('active');
+    showcase.classList.toggle('active');
+  })
+  </script>
+ </body>
+ </html> <!-- https://www.pexels.com/video/aerial-view-of-beautiful-resort-2169880/   https://www.pexels.com/videos/-->
+
+  
+    

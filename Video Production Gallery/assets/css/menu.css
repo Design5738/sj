@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Anton&family=Black+Han+Sans&family=Dongle&family=Gloria+Hallelujah&family=Hahmlet&family=Noto+Serif+KR:wght@500&family=Poppins:wght@300&family=Stylish&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Anton&family=Black+Han+Sans&family=Dongle&family=Gloria+Hallelujah&family=Gowun+Dodum&family=Hahmlet&family=Noto+Serif+KR:wght@500&family=Poppins:wght@300&family=Stylish&display=swap');
+:root{
+    --main-color:##00bac7;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gowun Dodum', sans-serif;
+}
+.container{
+    margin-right: 100px;
+    margin-left: 100px;
+}
+.logo{
+    margin-top: 10px;
+    float:right;
+    width: 100px;
+}
+.common-btn {
+    padding: 18px 40px;
+    background: transparent;
+    outline: none;
+    border: 2px solid #00bac7;
+    font-weight: bold;
+    color: #777;
+    cursor: pointer;
+    color: rgb(29, 29, 29);
+}
+.common-btn a{
+    color: rgb(29, 29, 29);
+    font-weight: 700;
+    text-decoration: none;
+    outline: none;
+}
+.common-btn a:hover {
+    outline: none;
+    color: #9ab2ff;
+
+    cursor: pointer;
+}
+#sideNav{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background: #36c7d1;
+    z-index: 2;
+    transition: .5s;
+}
+nav ul li{
+    list-style: none;
+    margin: 30px -11px;
+    font-weight: 100;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    line-height: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+#menuBtn{
+    display: inline-block;
+    z-index: 50;
+    width: 50px;
+    position: fixed;
+    right: 20px;
+    top: 22px;
+    z-index: 2;
+    cursor: pointer;
+}
+@media only screen and (max-width: 770px){
+    #header{
+        background-image: none;
+    }
+    .container{
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+    .logo{
+        margin-top: 27px;
+        width: 70px;
+    }
+    #menuBtn{
+        width: 40px;
+        right: 50px;
+    }
+    .common-btn{
+        padding: 0
+    }
+}

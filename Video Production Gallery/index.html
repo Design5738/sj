@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Video Production</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link href="assets/img/idea.png" rel="icon">
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/menu.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+	</head>
+	<body class="is-preload">
+		<section  id="header">		
+		<nav id="sideNav">
+			<ul>
+				<li><a href="../index.html">첫페이지로</a></li>
+				<li><a href="#My work">자기소개영상</a></li>
+				<li><a href="#public">① 공익광고</a></li>
+				<li><a href="#adver1">② 학교광고</a></li>
+				<li><a href="#adver2">③ 광고모음</a></li>
+				<li><a href="#intro">④ 인트로/애니메이션</a></li>
+			</ul>
+		</nav>
+		<img src="../images/menu2.png" id="menuBtn">
+	</section>
+			<div id="wrapper">
+				<!-- Intro -->
+					<section class="intro">
+						<header>
+							<h1>Video Production</h1>
+							<p>비디오 제작</p>
+						</header>
+						<div class="content">
+							<img src="img/challenge.gif" alt="">
+							<span class="image fill" data-position="center"></span>
+						</div>
+					</section>		
+
+				<!-- Section -->
+				<section id="My work">
+					<header>
+						<h2>자기소개영상</h2>
+					</header>
+					<div class="content">
+						<!-- <p>・자기소개 영상을 제작해 보았습니다.</p>				 -->
+						<video src="video/introduction.mp4" controls></span></video></span>
+					</div>
+				</section>
+				<!-- Section -->					
+					<section id="public">
+						<header>
+							<h2>공익광고</h2>								
+						</header>
+						<div class="content">
+							<!-- <p>・캐릭터 '노롱이'를 이용하여 「탄소중립운동」메시지를 전달하는 <mark>공익광고</mark> 영상을 제작해 보았습니다.</p> -->
+							<div class="small-img-row feature-img">
+								<a href="sub/public/public.html" >																								
+								<img src="img/carbonneutralimg.JPG" class="carbon" id="pick"></a>																
+							</div>
+						</div>							
+					</section>
+				<!-- Section -->
+					<section id="adver1">
+						<header>
+							<h2>센텀직업전문학교 광고</h2>	
+						</header>								
+						<div class="content">
+							<!-- <p>・유튜브 프리미엄 광고를 응용하여 <mark>센텀직업전문학교 광고</mark> 영상을 제작해 보았습니다.</p> -->
+							<div class="small-img-row feature-img">
+								<a href="sub/youtube/youtube.html" >																
+								<img src="img/youtube.JPG" id="pick"></a>																
+							</div>
+						</div>							
+					</section>
+				<!-- Section -->
+				<section id="adver2">
+					<header>
+						<h2>광고모음</h2>								
+					</header>
+					<div class="content">
+						<!-- <p>・기업체 <mark>상품 광고</mark>를 제작해 보았습니다.</p> -->
+						<div class="small-img-row feature-img">
+							<a href="sub/collection/collection.html" >															
+							<img src="img/collection.JPG" id="pick"></a>																
+						</div>
+					</div>							
+				</section>
+					<!-- Section -->
+					<section id="intro">
+						<header>
+							<h2>인트로/애니메이션</h2>									
+						</header>	
+						<div class="content">
+							<!-- <p>・각종 <mark>인트로・애니메이션</mark> 영상들을 모아 하나의 신나는 영상으로 제작해 보았습니다.</p> -->
+							<div class="small-img-row feature-img">
+								<a href="sub/Intro/Intro.html" >															
+								<img src="img/intro.JPG" id="pick"></a>																
+							</div>
+						</div>							
+					</section>
+		</div>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+			<script type="module">
+				import { Fancybox } from "https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.esm.js";
+			</script>
+			<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+			<script>
+				var menuBtn = document.getElementById("menuBtn");
+				var sideNav = document.getElementById("sideNav");
+				sideNav.style.right = "-250px";
+				menuBtn.onclick = function(){
+					if(sideNav.style.right == "-250px"){
+						sideNav.style.right = "0";
+					}
+					else{
+						sideNav.style.right = "-250px";
+					}
+				}
+				var scroll = new SmoothScroll('a[href*="#"]',{
+					speed: 1000,
+					speedAsDuration: true
+				});
+				AOS.init();				
+			</script>
+			<script>
+				var videoPlayer=document.getElementById("videoPlayer")
+				var myVideo=document.getElementById("myVideo")
+				function stopVideo(){
+					videoPlayer.style.display="none"
+				}
+				function playVideo(file){
+					myVideo.src = file;
+					videoPlayer.style.display="block";
+				}
+			</script>
+	</body>
+	</html>
