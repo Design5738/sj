@@ -105,7 +105,7 @@ input, select, textarea {
 		-ms-transition: border-bottom-color 0.25s ease-in-out;
 		transition: border-bottom-color 0.25s ease-in-out;
 		text-decoration: none;
-		color:#1e00fb;
+		color:#0ed3df !important;
 		font-size: 15px;
 		font-weight: bold;	
 	}
